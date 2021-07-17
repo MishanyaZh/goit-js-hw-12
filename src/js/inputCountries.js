@@ -20,13 +20,13 @@ inputRef.addEventListener('input', debounce(onInputCountry,DEBOUNCE_DELAY));
 function onInputCountry(evt) {
 
     const countryName = evt.target.value.trim();
-   
-    FC.fetchCountries(countryName).then(countryName => {
+    // console.log(countryName);
     if (countryName ==='') {
         return Notiflix.Notify.failure('Please enter country');
     }
-        clearPage()
-
+   
+    FC.fetchCountries(countryName).then(countryName => { 
+       clearPage()
         if (countryName.status === 404) {
             Notiflix.Notify.failure('Oops, there is no country with that name');
         } else if (countryName.length > 10) {
@@ -36,10 +36,6 @@ function onInputCountry(evt) {
         } else if (countryName.length > 1 && countryName.length <= 10) {
             getMarkupOfCountries(countryName);
         }
-          
-    }).catch(error => {
-        Notiflix.Notify.info('Please enter country');
-        console.log(error)
     });
 
 }
