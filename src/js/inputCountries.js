@@ -1,7 +1,6 @@
 import markupOfCountries from "../templates/countries-markup.hbs";
 import markupOfOneCountry from '../templates/one-country-markup';
 
-import { getElementById } from "htmlparser2/node_modules/domutils";
 import Notiflix from "notiflix";
 
 var debounce = require('lodash.debounce');
@@ -11,9 +10,8 @@ import FC from './fetchCountries';
 
 
 const inputRef = document.querySelector('#search-box');
-// console.log(inputRef);
-const countryInfoRef = document.querySelector(".country-info");
 
+const countryInfoRef = document.querySelector(".country-info");
 const countryListRef = document.querySelector('.country-list');
 
 
