@@ -22,6 +22,18 @@ body {
   font-size: 30px;
 }
 
+.country-info {
+  background-color: aqua;
+}
+
+.country-list {
+  background-color: grey;
+}
+
+.name {
+  font-weight: 700;
+}
+
 .image-size {
   width: 50px;
   height: 30px;
@@ -36,4 +48,8 @@ body {
 
 .list {
   color: green;
+}
+
+ul {
+  list-style: none;
 }
