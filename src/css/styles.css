@@ -20,6 +20,7 @@ body {
 .country-info--info {
   /* color: blue; */
   font-size: 30px;
+  margin: 0px;
 }
 
 .country-info {
