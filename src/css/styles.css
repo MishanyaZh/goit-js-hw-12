@@ -29,6 +29,7 @@ body {
 
 .country-list {
   background-color: grey;
+  margin: 0px;
 }
 
 .name {
@@ -53,4 +54,9 @@ body {
 
 ul {
   list-style: none;
+}
+
+.country-info--list {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
