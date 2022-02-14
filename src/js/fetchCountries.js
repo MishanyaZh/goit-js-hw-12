@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // console.log('this is - fetchCountries.js');
 
-const BASE_URL = 'https://restcountries.com/v3.1/name/';
+const BASE_URL = 'ttps://restcountries.com/v2/name/{name}';
 
 // old version
 
